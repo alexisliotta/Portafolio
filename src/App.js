@@ -24,18 +24,24 @@ function App() {
       description:
         "Sitio web enfocado en visualizacion de peliculas,con descripcion e informacion sobre cada una de ellas.",
       image: Panda,
+      website: 'https://pandapopcorn.netlify.app',
+      repository: 'https://github.com/alexisliotta/PopCorns-Panda',
     },
     {
       title: "ColdMorning",
       description:
         "Proporciona datos meteorológicos globales, actuales, pronósticos y todo referido al clima...",
       image: ColdMorning,
+      website: 'https://coldmorning.netlify.app',
+      repository: 'https://github.com/alexisliotta/ColdMorning',
     },
     {
       title: "Amabie COVID-19",
       description:
         "Sitio web enfocado en visualizacion de infectados dependiendo de localidad o pais.",
       image: Amabie,
+      website: 'https://amabie-covid19.netlify.app',
+      repository: 'https://github.com/alexisliotta/Amabie',
     },
   ];
 
@@ -111,6 +117,8 @@ function App() {
                   {project.description}
                 </p>
                 <div className="page__container__card__der__btn">
+                  
+                <a href={project.website} target='_blank'>
                   <div className="page__container__card__der__ir">
                     <img
                       className="page__container__card__der__btn__iconos"
@@ -121,14 +129,20 @@ function App() {
                       Sitio web
                     </span>
                   </div>
+                 </a>
+
+                 <a href={project.repository} target='_blank'>
                   <div className="page__container__card__der__git">
+                    
                     <img
                       className="page__container__card__der__btn__iconos"
                       src={Repositorio}
                     />
                     <span className="page__container__card__der__btn__iconos">Repositorio</span>
                   </div>
+                </a>
                 </div>
+                
               </div>
             </div>
           </div>
